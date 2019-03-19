@@ -1,6 +1,6 @@
 ## HackMcGill Dev Team Coding Challenge
 
-Here is a design for a email submission form
+Here is a design for a email submission form  
 [Demo here!](https://mchacks-email-form-design.herokuapp.com/)
 
 ### Desktop View 
