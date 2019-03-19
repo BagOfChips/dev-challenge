@@ -1,7 +1,7 @@
 ## HackMcGill Dev Team Coding Challenge
 
-Here is a design for a email submission form. 
-Done in around 50 lines (excluding express boiler plate code + node modules)
+Here is a design for a email submission form
+[Demo here!](https://mchacks-email-form-design.herokuapp.com/)
 
 ### Desktop View 
 ![Desktop image](public/images/desktop_view.PNG)
