@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title><%= TITLE %></title>
+    <link rel='stylesheet' href='stylesheets/style.css'/>
+</head>
+
+<body>
+
+<div class="grid-container">
+    <div class="half1">
+        <div id="logo-and-form-container">
+            <div id="logo-container">
+                <img id="gliscor-logo" src="images/gliscor.png">
+            </div>
+            <div class="form-wrapper">
+            <form id="emailForm" onsubmit="return false;">
+                <div id="emailHeader">JOIN OUR NETWORK</div>
+                <input 
+                    id="emailInput"
+                    type="text" 
+                    name="email" 
+                    class="emailSubmission" 
+                    placeholder="ENTER YOUR EMAIL" 
+                    spellcheck="false" 
+                    maxlength="50">
+                <input type="submit" class="submitButton" value="➜">
+            </form>
+            <div id="email-response"></div>
+            </div>
+        </div>
+    </div>
+    <div class="half2 sample-text">
+        Can expand right panel to display: <br>
+        news + twitter feeds <br>
+        1 click registration to workshops
+    </div>
+</div>
+
+<script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

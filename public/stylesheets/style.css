@@ -1,0 +1,138 @@
+
+/** 
+ * custom font 
+ */
+
+@font-face {
+	font-family: "LightFont";
+	src: url("/fonts/TheLightFont.ttf");
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #303333;
+
+	font-family: "LightFont";
+	color: #FAAAAA;
+	font-size: 1.5em;
+}
+
+/** 
+ * grid container class
+ */
+
+.half1 { grid-area: logoAndForm; }
+.half2 { grid-area: newsFeed; }
+
+@media (min-width: 1300px) {
+	.grid-container {
+		height: 100%;
+		display: grid;
+		grid-template-areas: 'logoAndForm newsFeed';
+	}
+}
+
+@media (min-width: 650px) and (max-width: 1300px) {
+	.grid-container {
+		height: 60%;
+		display: grid;
+		grid-template-areas: 
+			'logoAndForm'
+			'newsFeed';
+	}
+}
+
+.grid-container > div {
+	padding: 1em;
+	/*border: 2px solid;*/
+}
+
+/**
+ * logo + form container 
+ */
+#logo-and-form-container {
+	width: 50%;
+	margin: auto;
+}
+
+/**
+ * logo styling 
+ */
+
+#logo-container {}
+
+#gliscor-logo {
+    display: block;
+    margin: auto;
+    width: 100%
+}
+
+/**
+ * style form + input  
+ */
+
+.form-wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+#emailHeader {
+	font-size: 0.6em;
+	color: #F6E1CD;
+	text-align: center;
+}
+
+.emailSubmission {
+	margin: auto;
+	margin-top: 0.5em;
+	display: block;
+
+	width: 15em;
+	padding: 0.5em;
+	border-radius: 2em;
+	box-sizing: border-box;
+
+	font-size: 0.5em;
+	font-family: "LightFont";
+	text-align: center;
+	color: #F6E1CD;
+
+	background-color: transparent;
+	border-color: #FAAAAA;
+}
+
+.emailSubmission::placeholder {
+	color: #F6E1CD;
+	font-family: "LightFont";
+}
+
+.emailSubmission:focus { outline: none; }
+
+.submitButton {
+	margin: auto;
+	margin-top: 0.5em;
+	display: block;
+
+	background-color: transparent;
+	border-color: transparent;
+
+	font-size: 0.5em;
+	color: #FAAAAA;
+}
+
+.submitButton:focus { outline: none; }
+
+#email-response {
+	margin: auto;
+	margin-top: 0.5em;
+
+	font-size: 0.6em;
+	color: #F6E1CD;
+	text-align: center;
+}
+
+.sample-text {
+	text-align: center;
+}
